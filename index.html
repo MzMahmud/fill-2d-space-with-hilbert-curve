@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Hilbert Curve</title>
+</head>
+
+<body>
+    <main id="main-content">
+        <div>
+            <h2>Fill 2D Space with Hilbert Curve</h2>
+            <div>
+                <strong>Starting Generation (1-9)</strong>&nbsp;&nbsp;&nbsp;
+                <input type="number" id="gen" value="1" min='1' max="8">
+                <label>
+                    <strong>Pause on Each End of Generation</strong>&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" id="pause-on-gen-end">
+                </label>
+            </div>
+            <div id="image-upload" style="margin-top: 1rem;">
+                <strong>Upload Image</strong>
+            </div>
+
+            <div style="margin: 10px;">
+                <button class="control-btn" id="reset" title="Reset">
+                    <i class="fas fa-redo"></i>
+                </button>
+                <button class="control-btn" id="pause-play" title="Pause">
+                    <i id="pause" class="fas fa-pause"></i>
+                    <i id="play" class="fas fa-play"></i>
+                </button>
+                <button class="control-btn" id="fast-forward" title="Fast Forward">
+                    <i class="fas fa-fast-forward"></i>
+                </button>
+                <button class="control-btn" id="download" title="Download as Image">
+                    <i class="fas fa-download"></i>
+                </button>
+            </div>
+            <div>
+                <h3 id="curr-gen">Current Generation</h3>
+            </div>
+        </div>
+    </main>
+    <script src="./js/hilbert-curve.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

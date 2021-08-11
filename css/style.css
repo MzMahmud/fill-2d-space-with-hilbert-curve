@@ -1,0 +1,29 @@
+body {
+    background-color: rgba(241, 239, 230, 0.973);
+}
+
+main {
+    text-align: center;
+}
+
+canvas {
+    box-shadow: 5px 5px 10px grey;
+}
+
+h2, h3 {
+    margin: 10px;
+}
+
+button.control-btn{
+    cursor: pointer;
+    padding: 10px;
+    background-color: bisque;
+    border: none;
+    box-shadow: 2px 2px 3px grey;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+button.control-btn:hover {
+    background-color: burlywood;
+}
