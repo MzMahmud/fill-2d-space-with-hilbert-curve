@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <meta charset="utf-8" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
     <title>Hilbert Curve</title>
 </head>
 
@@ -17,18 +17,14 @@
         <div>
             <h2>Fill 2D Space with Hilbert Curve</h2>
             <div>
-                <strong>Starting Generation (1-9)</strong>&nbsp;&nbsp;&nbsp;
-                <input type="number" id="gen" value="1" min='1' max="8">
-                <label>
-                    <strong>Pause on Each End of Generation</strong>&nbsp;&nbsp;&nbsp;
-                    <input type="checkbox" id="pause-on-gen-end">
-                </label>
+                <strong>Starting Generation (1-9)</strong>
+                <input type="number" id="gen" value="1" min='1' max="9">
             </div>
-            <div id="image-upload" style="margin-top: 1rem;">
+            <div id="image-upload" style="margin-top: 8px;">
                 <strong>Upload Image</strong>
             </div>
 
-            <div style="margin: 10px;">
+            <div style="margin: 6px;">
                 <button class="control-btn" id="reset" title="Reset">
                     <i class="fas fa-redo"></i>
                 </button>
@@ -44,7 +40,11 @@
                 </button>
             </div>
             <div>
-                <h3 id="curr-gen">Current Generation</h3>
+                <h4 id="curr-gen">Current Generation</h4>
+                <label>
+                    <strong>Pause on Each End of Generation</strong>
+                    <input type="checkbox" id="pause-on-gen-end">
+                </label>
             </div>
         </div>
     </main>

@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
+
+:root {
+    font-family: 'Source Code Pro', 'Courier New', Courier, monospace;
+}
+
 body {
     background-color: rgba(241, 239, 230, 0.973);
 }
@@ -11,7 +17,11 @@ canvas {
 }
 
 h2, h3 {
-    margin: 10px;
+    margin: 8px;
+}
+
+h4 {
+    margin: 3px;
 }
 
 button.control-btn{

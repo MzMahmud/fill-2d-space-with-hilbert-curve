@@ -1,12 +1,11 @@
 const size = 512;
 const pauseOnGenEndInput = document.getElementById('pause-on-gen-end');
 let img, input, canvas;
-let isPaused, iterationPerFrame, pauseOnGenEnd;
+let isPaused, iterationPerFrame;
 let gen, N, hilbertIndex, scale, prevPoint, nPoints;
 
 function init(gen) {
     isPaused = false;
-    pauseOnGenEnd = pauseOnGenEndInput.checked;
     iterationPerFrame = 1;
     N = 1 << gen; // 2^gen
     nPoints = N * N;
@@ -37,7 +36,7 @@ function draw() {
         drawHilbert();
         hilbertIndex++;
         if (hilbertIndex === nPoints) {
-            if (pauseOnGenEnd) {
+            if (pauseOnGenEndInput.checked) {
                 isPaused = true;
                 playPause();
                 break;
