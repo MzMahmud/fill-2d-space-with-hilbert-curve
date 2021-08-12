@@ -10,7 +10,7 @@ I got to know about `Hilbert Curve` from my university's computer graphics cours
 > *Generation 6 Hilbert Curve being drawn with changing hue*
 
 ## Interact with the Project
-- [Try the Project](https://ghcdn.rawgit.org/MzMahmud/fill-2d-space-with-hilbert-curve/master/index.html)
+- [Try the Project](https://mzmahmud.github.io/fill-2d-space-with-hilbert-curve/)
 
 ## Features
 - **Starting Generation (1-9)**
