@@ -11,7 +11,7 @@ function lastTwoBits(n) {
 
 function hilbertIndexToPoint(hilbertIndex, N) {
     const point = { ...baseHilberIndexToPoint[lastTwoBits(hilbertIndex)] };
-    for (let n = 4; n <= N; n *= 2) {
+    for (let n = 4; n <= N; n <<= 1) {
         const nBy2 = n >>> 1;
         const pointOld = { ...point };
         hilbertIndex = hilbertIndex >>> 2;
